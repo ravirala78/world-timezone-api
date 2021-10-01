@@ -21,6 +21,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	region : attributes.uriParams.region
 }]]]></http:uri-params>
 		</http:request>
-		<logger level="INFO" doc:name="Logger" doc:id="8dad089f-b68a-45d2-aec1-6c71c574398c" message="####timezone api-hello New York Timezone#####"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8dad089f-b68a-45d2-aec1-6c71c574398c" message="####logger after http request#####"/>
 	</flow>
 </mule>
