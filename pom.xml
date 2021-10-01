@@ -37,7 +37,7 @@
 						<username>ramakrishna78</username>
 						<password>Sahasra@0628</password>
 						<environment>Sandbox</environment>
-						<applicationName>world-timezone-service</applicationName>
+						<applicationName>world-timezone-service-rk</applicationName>
 						<businessGroup>HR</businessGroup>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
