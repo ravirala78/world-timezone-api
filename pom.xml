@@ -41,6 +41,7 @@
 						<businessGroup>HR</businessGroup>
 						<workerType>Micro</workerType>
 						<workers>1</workers>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
