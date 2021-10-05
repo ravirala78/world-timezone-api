@@ -12,6 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="world-timezone-demo-apiFlow" doc:id="f766ee1d-939b-4213-9b0f-1464c430f502" >
 		<http:listener doc:name="Listener" doc:id="33e50217-abac-457b-ab21-27b8e0539e3a" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6ff5d003-5ebe-4d85-a685-1e68db9e2c73" message="###before Http Request####"/>
 		<http:request method="GET" doc:name="Request" doc:id="e36a482e-9b43-4184-bbbb-f57b4dd10b41" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
@@ -20,6 +21,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	region : attributes.uriParams.region
 }]]]></http:uri-params>
 		</http:request>
-		<logger level="INFO" doc:name="Logger" doc:id="8dad089f-b68a-45d2-aec1-6c71c574398c" message="####timezone api#####"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8dad089f-b68a-45d2-aec1-6c71c574398c" message="####logger after http request#####"/>
 	</flow>
 </mule>
